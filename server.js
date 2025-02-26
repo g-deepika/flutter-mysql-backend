@@ -3729,6 +3729,11 @@ app.get('/dashboard-datan', getDashboardDataNew);
 //    console.log(`Server is running on http://localhost:${port}`);
 //});
 
+// Handle root request
+app.get('/', (req, res) => {
+    res.send('Backend server is up and running!');
+});
+
 
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on http://localhost:${PORT}`);
